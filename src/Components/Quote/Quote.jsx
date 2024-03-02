@@ -8,7 +8,8 @@ export default function Quote(){
     return(
         <section className='Quote'>
             <div className="container quote-container">
-                <TitleTypeTwo Title={'Quote of the day'} className='quote-title'/>
+                <TitleTypeTwo Title={'Quote of the day'} 
+                className='quote-title'/>
                 
                     {
                         quoteData.map(({quote,speaker},index)=>{
