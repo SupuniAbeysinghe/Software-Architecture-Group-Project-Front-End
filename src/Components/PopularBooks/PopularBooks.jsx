@@ -4,39 +4,67 @@ import TitleTypeOne from '../../UI/TitleTypeOne/TitleTypeOne'
 
 import { galleryData } from '../../Data/Data'
 
+import { useState } from 'react';
+
 export default function Popularbooks(){    
+
+    const [activeButton, setActiveButton] = useState('all')
+
+    const handleFilterChange = (category)=>{
+        setActiveButton(category);
+    }
+
         const filterItems = activeButton === 'all'? galleryData:galleryData.
         filter((item)=>item.category === activeButton);
     
 
     return(
-        <section>
+        <section className='Popularbooks'>
         <div className="container popularbooks-container">
-            <TitleTypeOne TitleTop={'Some quality items'} Title={'Popular Books'} className={'popularBooks-title'}/>
+            <TitleTypeOne TitleTop={'Some quality items'} Title={'Popular Books'} 
+            className={'popularBooks-title'}/>
 
             <div className="filter-buttons">
-                <button>
+                <button 
+                className={activeButton === 'all' ? 'active':''}
+                onClick={()=> handleFilterChange('all')}>
                     All
                 </button>
-                <button>
+                <button
+                 className={activeButton === 'Business' ? 'active':''}
+                 onClick={()=> handleFilterChange('Business')}
+                >
                     Business
                 </button>
-                <button>
+                <button
+                 className={activeButton === 'Technology' ? 'active':''}
+                 onClick={()=> handleFilterChange('Technology')}
+                 >
                     Technology
                 </button>
-                <button>
+                <button
+                 className={activeButton === 'Adventure' ? 'active':''}
+                 onClick={()=> handleFilterChange('Adventure')}
+                 >
                     Adventure
                 </button>
-                <button>
+                <button
+                 className={activeButton === 'Romantic' ? 'active':''}
+                 onClick={()=> handleFilterChange('Romantic')}
+                 >
                     Romantic
                 </button>
-                <button>
+                <button
+                 className={activeButton === 'Fictional' ? 'active':''}
+                 onClick={()=> handleFilterChange('Fictional')}
+                 >
                     Fictional
                 </button>
 
             </div>
             <div className="gallery">
-                {filterItems.map(({name,writer,price,image},index)=>{
+                {
+                filterItems.map(({name,writer,price,image},index)=>{
                     return(
                         <div className="gallery-item" key={index}>
                             <div className="popularbook-image">
