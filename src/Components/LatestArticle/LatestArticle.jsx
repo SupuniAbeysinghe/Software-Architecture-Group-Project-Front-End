@@ -15,7 +15,7 @@ import { BsArrowRight } from 'react-icons/bs'
 export default function LatestArticle(){
     return(
         <section className='latestArticle'>
-            <div className='container latest-container'>
+            <div className='container latest-article-container'>
                 <TitleTypeOne Title={'Latest Articles'} TitleTop={'read our aarticles'}/>
 
                 <div className="latest-article-content">

@@ -1,4 +1,4 @@
-.latest-container{
+.latest-article-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 50px;
@@ -16,10 +16,52 @@
 }
 .article-info h5{
     color: var(--color-primary);
-    font-size: 26px;
+    font-size: 15px;
     text-transform: capitalize;
 }
 .article-info h3{
     font-size: 26px;
     text-transform: capitalize;
+}
+
+.latest-article-social{
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.latest-article-social p{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.article-social{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.article-social a{
+    font-size: 15px;
+    color: var(--color-dark);
+    transition: var(--transtion);
+}
+.article-social a:hover{
+    color: var(--color-primary);
+}
+.latest-article-container .btn{
+    margin: auto;
+    margin-top: 66px;
+}
+
+/*1024*/
+@media(max-width:1024px){
+    .latest-article-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+    }
+}
+/*600*/
+@media(max-width:600px){
+    .latest-article-container{
+        grid-template-columns: repeat(1,1fr);
+        gap: 56px;
+    }
 }
