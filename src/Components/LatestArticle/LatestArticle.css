@@ -1,4 +1,4 @@
-.latest-article-container{
+.latest-article-content{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 50px;
@@ -53,14 +53,14 @@
 
 /*1024*/
 @media(max-width:1024px){
-    .latest-article-container{
+    .latest-article-content{
         grid-template-columns: repeat(2,1fr);
         gap: 40px;
     }
 }
 /*600*/
 @media(max-width:600px){
-    .latest-article-container{
+    .latest-article-content{
         grid-template-columns: repeat(1,1fr);
         gap: 56px;
     }

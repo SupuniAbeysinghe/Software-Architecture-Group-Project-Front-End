@@ -19,3 +19,22 @@ footer{
     font-size: 15px;
     transition: var(--transition);
 }
+.param-Links li a:hover{
+    color: var(--color-primary);
+}
+
+/*1024*/
+@media(max-width:1024px){
+    .footer-container{
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+    }
+}
+
+/*600*/
+@media(max-width:600px){
+    .footer-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+

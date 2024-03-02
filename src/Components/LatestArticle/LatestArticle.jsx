@@ -16,7 +16,7 @@ export default function LatestArticle(){
     return(
         <section className='latestArticle'>
             <div className='container latest-article-container'>
-                <TitleTypeOne Title={'Latest Articles'} TitleTop={'read our aarticles'}/>
+                <TitleTypeOne Title={'Latest Articles'} TitleTop={'Read our articles'}/>
 
                 <div className="latest-article-content">
                     {
@@ -49,7 +49,7 @@ export default function LatestArticle(){
                 </div>
 
                 <Link to={'*'} className='btn btn-border'>Read all articles
-                    <span><BsArrowRight/></span></Link>
+                    <BsArrowRight/></Link>
             </div>
 
         </section>
