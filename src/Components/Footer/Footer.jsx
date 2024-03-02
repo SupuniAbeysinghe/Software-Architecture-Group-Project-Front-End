@@ -1,9 +1,8 @@
 import './Footer.css'
 
-import {FootersLinksData} from '../../Data/Data'
-import { Link } from 'react-router-dom'
-import {CopyRight} from '../CopyRight/CopyRight'
-
+import { FootersLinksData } from '../../Data/Data'
+import {Link} from 'react-router-dom'
+import CopyRight from '../CopyRight/CopyRight';
 export default function Footer(){
     return (
         <footer>
