@@ -29,7 +29,8 @@ export default function BestSellingBook(){
                         <img src={img} alt="" />
                     </div>
                     <div className="selling-book-right">
-                    <TitleTypeTwo Title={'Best selling book'}/>
+                    <TitleTypeTwo Title={'Best selling book'}
+                    className="SellingBookTitle"/>
                     <div><small>{infoTitleTop}</small></div>
                     <h3>{infoTitle}</h3>
                     <p>{desc}</p>
