@@ -1,0 +1,25 @@
+.latest-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    margin-top: 56px;
+}
+.article-image{
+    margin-bottom: 30px;
+}
+.article-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 26px;   
+}
+.article-info h5{
+    color: var(--color-primary);
+    font-size: 26px;
+    text-transform: capitalize;
+}
+.article-info h3{
+    font-size: 26px;
+    text-transform: capitalize;
+}
