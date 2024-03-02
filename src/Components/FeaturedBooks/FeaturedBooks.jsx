@@ -1,7 +1,7 @@
 
 import './FeaturedBooks.css'
 
-import TitleTypeOne from '../../UI/TitleTypeOne/TitleTypeOne'
+import TitleTypeOne from '../../UI/TitleTypeOne/TitleTypeOne';
 
 // Import Swiper React components Swiper styles
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,22 +12,50 @@ import{Pagination} from 'swiper/modules';
 
 import { featuredBooksData } from '../../Data/Data';
 
+import {Link} from 'react-router-dom';
+
+import { BsArrowReturnRight } from "react-icons/bs";
+
+
 export default function FeaturedBooks(){
     return(
+    
         <div className='container featured-book-container'>
             {/*title props */}
             <TitleTypeOne TitleTop={'Some Quality items'} Title={'Featured Books'}/>
             {/*featured books slider */}
             <Swiper
                 spaceBetween={50}
-                slidesPerView={1}
+                slidesPerView={4}
                 loop={true}
                 modules={[Pagination]}
                 pagination={{ el: ".swiper-pagination", clickable: true }}>
                 {
-                    featuredBooksData.map(({}))
+                    featuredBooksData.map(({img,imgLlink,name,nameLink,writer,price},index)=>{
+                        return(
+                        <SwiperSlide key={index}>
+                            <div className="featurebook-box">
+                                <Link to={imgLlink}>
+                                    <img src={img} alt="" />
+                                </Link>
+                                <div className="featurebook-info">
+                                    <Link to={nameLink}>
+                                        {name}
+                                    </Link>
+                                    <div><small>{writer}</small></div>
+                                    <h5><span>{price}</span></h5>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        )
+                    })
                 } 
+                <div className="feature-border container"></div>
+                <div className="swiper-pagination"></div>
+                <Link to='*' className='btn feature-btn'>View all products<BsArrowReturnRight />
+                </Link>
             </Swiper>
         </div>
+        
     )
 }
