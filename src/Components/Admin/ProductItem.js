@@ -1,4 +1,3 @@
-// ProductItem.js
 import React, { useState } from 'react';
 import AddProductForm from './AddProductForm';
 
