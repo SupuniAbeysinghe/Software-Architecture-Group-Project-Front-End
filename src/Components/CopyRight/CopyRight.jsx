@@ -6,7 +6,7 @@ export default function CopyRight(){
     return(
         <div className="footer-copyright">
             <div className="container copyright-container">
-                <p>©propery of the bookshelf</p>
+                <p>©property of the bookshelf</p>
                 <div className="footer-socials">
                     {
                         FootersLinksData.socials.map((item,index)=>{

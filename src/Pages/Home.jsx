@@ -6,7 +6,6 @@ import BestSellingBook from "../Components/BestSellingBook/BestSellingBook";
 import PopularBooks from "../Components/PopularBooks/PopularBooks";
 import Quote from "../Components/Quote/Quote";
 import LatestArticle from "../Components/LatestArticle/LatestArticle";
-import Footer from "../Components/Footer/Footer";
 
 
 export default function Home(){
@@ -19,8 +18,6 @@ export default function Home(){
         <PopularBooks/>
         <Quote/>
         <LatestArticle/>
-        <Footer/>
-        
         </>
     )
 }

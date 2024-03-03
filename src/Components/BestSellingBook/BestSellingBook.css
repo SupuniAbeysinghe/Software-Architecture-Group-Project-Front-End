@@ -44,7 +44,7 @@
 .selling-book-right .btn:hover{
     padding-left: 35px;
 }
-.selling-book-right .btn:hover small{
+.selling-book-right .btn:hover small{ 
     color: var(--color-bg-1) !important;
 }
 

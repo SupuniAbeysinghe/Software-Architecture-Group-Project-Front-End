@@ -47,7 +47,7 @@ export default function FeaturedBooks(){
     
         <div className='container featured-book-container'>
             {/*title props */}
-            <TitleTypeOne TitleTop={'Some Quality items'} Title={'Featured Books'}/>
+            <TitleTypeOne  Title={'Featured Books'}/>
             {/*featured books slider */}
             <Swiper
                 spaceBetween={50}

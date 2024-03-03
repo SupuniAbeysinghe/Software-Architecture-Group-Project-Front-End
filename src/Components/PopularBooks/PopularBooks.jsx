@@ -21,7 +21,7 @@ export default function Popularbooks(){
     return(
         <section className='Popularbooks'>
         <div className="container popularbooks-container">
-            <TitleTypeOne TitleTop={'Some quality items'} Title={'Popular Books'} 
+            <TitleTypeOne  Title={'Popular Books'} 
             className={'popularBooks-title'}/>
 
             <div className="filter-buttons">
@@ -73,7 +73,8 @@ export default function Popularbooks(){
                             <div className='popularbook-info'>
                                 <h4>{name}</h4>
                                 <div><small>{writer}</small></div>
-                                <h5><span>{price}</span></h5>
+                                <h5><span>{price}</span></h5><div className="addToCart">
+                                <button className='btn btn-border'>Add to Cart</button></div>
                             </div>
                         </div>
                     )

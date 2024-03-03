@@ -1,7 +1,6 @@
 
 import './TitleTypeOne.css'
 
-import victor from '../../assets/victor.png'
 
 export default function TitleTypeOne({ClassName,Title,TitleTop}){
     return(
@@ -13,7 +12,6 @@ export default function TitleTypeOne({ClassName,Title,TitleTop}){
                 <h2>{Title}</h2>
                 <div className='line'></div>
             </div>
-            <img src={victor} alt="" className='victor'/>
         </div>
     )
 }

@@ -4,8 +4,8 @@ import './BestSellingBook.css'
 
 import TitleTypeTwo from '../../UI/TitleTypeTwo/TypeTypeTwo'
 
-//import tree shape
-import TreeShape from '../../assets/treeShape.png'
+// //import tree shape
+// import TreeShape from '../../assets/treeShape.png'
 
 import { sellingBooksData } from '../../Data/Data'
 
@@ -18,9 +18,9 @@ export default function BestSellingBook(){
     return(
         <section className='BestSellingBook'>
             {/*selling book tree */}
-            <div className='treeshape'>
+            {/* <div className='treeshape'>
                 <img src={TreeShape} alt="" />
-            </div>
+            </div> */}
 {/*selling book content */}            
                { sellingBooksData.map(({img,infoTitle,infoTitleTop,desc,price,shopbtnLink})=>{
                 return(

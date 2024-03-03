@@ -45,6 +45,12 @@
     animation: GAni forwards 400ms ease;
 }
 
+.addToCart{
+    margin: auto;
+    padding-left: 80px;
+}
+
+
 @keyframes GAni {
     form{
         transform: scale(0);
