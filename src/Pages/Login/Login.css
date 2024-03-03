@@ -1,0 +1,10 @@
+.submitbtn{
+    margin: auto;
+    padding-left: 80px;
+    text-align: center;    
+    
+    
+}
+.submitbtn:hover{
+color: var(--color-bg-1);
+}

@@ -4,6 +4,8 @@ export default function Login() {
   
   return (
     <form >
+        <br />
+        <br />
       <label>Username:
       <input 
         name="username" 
@@ -16,10 +18,10 @@ export default function Login() {
           
         />
         </label><br />
+        
         <br />
-        <br />
-        <br />
-        <input type="submit" className='btn btn-border'/>
+        <br /><div className='submitbtn'>
+        <input type="submit" className='btn btn-border'/></div>
     </form>
   )
 }
